@@ -40,23 +40,43 @@ body {
 
   .input {
     font-size: $font-size-input;
-    color: $grey-smokey;
+    font-weight: $font-weight--bold;
     width: 14rem;
     padding: 0.8rem 1.6rem;
+    margin-bottom: 0.8rem;
     border-radius: 0.8rem;
     border: 1px solid $grey-light;
   }
 
-  .input::placeholder {
-    font-weight: $font-weight--bold;
+  .input:focus {
+    outline: 1px solid $purple;
   }
+
+  .input:hover {
+    border: 1px solid $purple;
+  }
+
+  .input::placeholder {
+    color: $grey-smokey;
+  }
+
+  .error-msg {
+    color: $red-light;
+    font-size: 1.2rem;
+    font-style: italic;
+  }
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
 }
 
 .btn-submit {
   @include flexCenter;
   position: absolute;
   right: 0;
-  top: 9.5rem;
+  top: 12rem;
 
   width: 6rem;
   height: 6rem;
@@ -72,6 +92,10 @@ body {
     height: 3rem;
     width: 3rem;
   }
+}
+
+.btn-submit:hover {
+  background-color: $black-off;
 }
 
 .age {

@@ -27,7 +27,11 @@
               name="input-day"
               class="input input-day"
               placeholder="DD"
+              min="1"
+              max="31"
+              required
             />
+            <p class="error-msg hidden">This field is required</p>
           </div>
           <div class="input-container">
             <label for="input-day">MONTH</label>
@@ -36,8 +40,11 @@
               name="input-month"
               class="input input-month"
               placeholder="MM"
-              `
+              min="1"
+              max="12"
+              required
             />
+            <p class="error-msg hidden">This field is required</p>
           </div>
           <div class="input-container">
             <label for="input-day">YEAR</label>
@@ -46,7 +53,9 @@
               name="input-year"
               class="input input-year"
               placeholder="YYYY"
+              required
             />
+            <p class="error-msg hidden">This field is required</p>
           </div>
           <button type="submit" class="btn-submit">
             <img src="assets/images/icon-arrow.svg" alt="Arrow icon" />

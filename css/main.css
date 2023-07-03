@@ -1,5 +1,5 @@
 /* Box sizing rules */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,800&display=swap");
 *,
 *::before,
 *::after {
@@ -119,17 +119,34 @@ body {
 }
 .input-container .input {
   font-size: 3.2rem;
-  color: hsl(0, 1%, 44%);
+  font-weight: 700;
   width: 14rem;
   padding: 0.8rem 1.6rem;
+  margin-bottom: 0.8rem;
   border-radius: 0.8rem;
   border: 1px solid hsl(0, 0%, 86%);
 }
+.input-container .input:focus {
+  outline: 1px solid hsl(259, 100%, 65%);
+}
+.input-container .input:hover {
+  border: 1px solid hsl(259, 100%, 65%);
+}
 .input-container .input::-moz-placeholder {
-  font-weight: 700;
+  color: hsl(0, 1%, 44%);
 }
 .input-container .input::placeholder {
-  font-weight: 700;
+  color: hsl(0, 1%, 44%);
+}
+.input-container .error-msg {
+  color: hsl(0, 100%, 67%);
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
 }
 
 .btn-submit {
@@ -139,7 +156,7 @@ body {
   flex-direction: row;
   position: absolute;
   right: 0;
-  top: 9.5rem;
+  top: 12rem;
   width: 6rem;
   height: 6rem;
   border: none;
@@ -150,6 +167,10 @@ body {
 .btn-submit img {
   height: 3rem;
   width: 3rem;
+}
+
+.btn-submit:hover {
+  background-color: hsl(0, 0%, 8%);
 }
 
 .age {
