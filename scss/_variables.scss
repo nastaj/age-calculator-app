@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,800&display=swap");
+
+// Primary
+$purple: hsl(259, 100%, 65%);
+$red-light: hsl(0, 100%, 67%);
+
+// Neutral
+$white: hsl(0, 0%, 100%);
+$white-off: hsl(0, 0%, 94%);
+$grey-light: hsl(0, 0%, 86%);
+$grey-smokey: hsl(0, 1%, 44%);
+$black-off: hsl(0, 0%, 8%);
+
+// Widths
+$width-mobile: 375px;
+$width-desktop: 1440px;
+
+$font-size-paragraph: 1.5rem;
+$font-size-input: 3.2rem;
+
+// Font weights
+$font-weight--regular: 400;
+$font-weight--bold: 700;
+$font-weight--extraBold: 800;
+
+@mixin flexCenter($direction: row) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+}

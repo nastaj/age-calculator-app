@@ -1,0 +1,95 @@
+@import "./resets";
+@import "./variables";
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  @include flexCenter;
+  background-color: $white-off;
+  height: 100vh;
+}
+
+.app-container {
+  background-color: $white;
+  padding: 3.6rem;
+  width: 68rem;
+  border-radius: 1.6rem;
+  border-bottom-right-radius: 16rem;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  gap: 2.4rem;
+  border-bottom: 1px solid $grey-light;
+  padding-bottom: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.input-container {
+  label {
+    display: block;
+    font-size: 1.2rem;
+    color: $grey-smokey;
+    font-weight: $font-weight--bold;
+    letter-spacing: 2px;
+    margin-bottom: 0.8rem;
+  }
+
+  .input {
+    font-size: $font-size-input;
+    color: $grey-smokey;
+    width: 14rem;
+    padding: 0.8rem 1.6rem;
+    border-radius: 0.8rem;
+    border: 1px solid $grey-light;
+  }
+
+  .input::placeholder {
+    font-weight: $font-weight--bold;
+  }
+}
+
+.btn-submit {
+  @include flexCenter;
+  position: absolute;
+  right: 0;
+  top: 9.5rem;
+
+  width: 6rem;
+  height: 6rem;
+
+  border: none;
+  border-radius: 100rem;
+
+  background-color: $purple;
+
+  cursor: pointer;
+
+  img {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
+.age {
+  font-size: 6.4rem;
+  font-weight: $font-weight--extraBold;
+  font-style: italic;
+
+  span {
+    color: $purple;
+  }
+}
+
+// Attribution
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
