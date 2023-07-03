@@ -138,6 +138,12 @@ body {
 .input-container .input::placeholder {
   color: hsl(0, 1%, 44%);
 }
+.input-container .input::-webkit-inner-spin-button,
+.input-container .input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+  margin: 0;
+}
 .input-container .error-msg {
   color: hsl(0, 100%, 67%);
   font-size: 1.2rem;
@@ -156,17 +162,17 @@ body {
   flex-direction: row;
   position: absolute;
   right: 0;
-  top: 12rem;
-  width: 6rem;
-  height: 6rem;
+  top: 11rem;
+  width: 8rem;
+  height: 8rem;
   border: none;
   border-radius: 100rem;
   background-color: hsl(259, 100%, 65%);
   cursor: pointer;
 }
 .btn-submit img {
-  height: 3rem;
-  width: 3rem;
+  height: 4rem;
+  width: 4rem;
 }
 
 .btn-submit:hover {
