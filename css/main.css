@@ -81,6 +81,7 @@ select {
 }
 body {
   font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 94%);
 }
 
 .container {
@@ -88,7 +89,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  background-color: hsl(0, 0%, 94%);
   height: 100vh;
 }
 
@@ -169,6 +169,7 @@ body {
   border-radius: 100rem;
   background-color: hsl(259, 100%, 65%);
   cursor: pointer;
+  transition: 0.2s all;
 }
 .btn-submit img {
   height: 4rem;
@@ -189,10 +190,54 @@ body {
 }
 
 .attribution {
-  font-size: 11px;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 8%);
+  padding: 1.6rem;
+  font-size: 1.4rem;
   text-align: center;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(259, 100%, 65%);
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    padding: 2rem;
+    margin: 0 2.4rem;
+  }
+  .form {
+    gap: 1.2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 4.8rem;
+  }
+  .input-container {
+    margin-bottom: 3.2rem;
+  }
+  .input-container .input {
+    width: 100%;
+    font-size: 1.6rem;
+  }
+  .input-container .input::-moz-placeholder {
+    font-size: 1.6rem;
+  }
+  .input-container .input::placeholder {
+    font-size: 1.6rem;
+  }
+  .input-container .error-msg {
+    font-size: 1rem;
+  }
+  .btn-submit {
+    height: 6rem;
+    width: 6rem;
+    top: 85%;
+    right: 38%;
+  }
+  .btn-submit img {
+    height: 3rem;
+    width: 3rem;
+  }
+  .age {
+    font-size: 4.8rem;
+  }
 }/*# sourceMappingURL=main.css.map */
