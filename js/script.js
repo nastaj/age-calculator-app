@@ -72,24 +72,15 @@ class CalculatorApp {
           this._renderError("This field is required");
         }
 
-        if (
-          this.#currentTarget.classList.contains("input-day") &&
-          (input.value > 31 || input.value <= 0)
-        ) {
+        if (this.#currentTarget.classList.contains("input-day")) {
           this._renderError("Must be a valid day");
         }
 
-        if (
-          this.#currentTarget.classList.contains("input-month") &&
-          (input.value > 12 || input.value <= 0)
-        ) {
+        if (this.#currentTarget.classList.contains("input-month")) {
           this._renderError("Must be a valid month");
         }
 
-        if (
-          this.#currentTarget.classList.contains("input-year") &&
-          input.value > this.#currentYear
-        ) {
+        if (this.#currentTarget.classList.contains("input-year")) {
           this._renderError("Must be in the past");
         }
       });
